@@ -29,7 +29,7 @@ jobs:
                 SOURCE_DIR: 'packages/container/dist'      # optional: defaults to entire repository
                 DEST_DIR: 'container/latest'
             
-            - uses: tsKarma/aws-cli@v1.70.0
+            - uses: ItsKarma/aws-cli@v1.70.0
               with:
                 args: s3 ls s3://${{ secrets.AWS_S3_BUCKET_NAME }}/container/latest
               env:
